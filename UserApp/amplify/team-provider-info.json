@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ridesharingapp-dev-122508-authRole",
+      "UnauthRoleArn": "arn:aws:iam::002248955514:role/amplify-ridesharingapp-dev-122508-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::002248955514:role/amplify-ridesharingapp-dev-122508-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-ridesharingapp-dev-122508-deployment",
+      "UnauthRoleName": "amplify-ridesharingapp-dev-122508-unauthRole",
+      "StackName": "amplify-ridesharingapp-dev-122508",
+      "StackId": "arn:aws:cloudformation:us-east-2:002248955514:stack/amplify-ridesharingapp-dev-122508/e7d22b10-da88-11eb-9010-0ad6e85a3bbc",
+      "AmplifyAppId": "d1fv1ljsep0vbv"
+    },
+    "categories": {
+      "function": {
+        "ridesharingapp719c6b22719c6b22PostConfirmation": {
+          "deploymentBucketName": "amplify-ridesharingapp-dev-122508-deployment",
+          "s3Key": "amplify-builds/ridesharingapp719c6b22719c6b22PostConfirmation-47474d43433350436434-build.zip"
+        }
+      },
+      "auth": {
+        "ridesharingapp719c6b22719c6b22": {}
+      }
+    }
+  }
+}

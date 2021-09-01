@@ -1,0 +1,44 @@
+{
+  "function": {
+    "ridesharingapp719c6b22719c6b22PostConfirmation": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "auth": {
+    "ridesharingapp719c6b22719c6b22": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "ridesharingapp719c6b22719c6b22PostConfirmation",
+          "triggerProvider": "Cognito",
+          "attributes": [
+            "Arn",
+            "Name"
+          ]
+        }
+      ],
+      "customAuth": false
+    }
+  },
+  "api": {
+    "ridesharingapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authridesharingapp719c6b22719c6b22"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  }
+}

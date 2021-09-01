@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "ridesharingapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authridesharingapp719c6b22719c6b22",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
